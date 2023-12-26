@@ -1,0 +1,52 @@
+package lab2;
+
+import java.util.Scanner;
+
+public class ex3 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Chuong trinh giai phuong trinh bac 2 (ax^2 +bx + c = 0)");
+        System.out.println("Nhap a: ");
+        int a = scanner.nextInt();
+
+        System.out.println("Nhap b: ");
+        int b = scanner.nextInt();
+
+        System.out.println("Nhap c: ");
+        int c = scanner.nextInt();
+
+        if (a==0) {
+            tinhptbac1(b,c);
+        }
+        else {
+            tinhptbac2(b,c);
+        }
+        static void tinhptbac1(int bb, int cc){
+        if (b==0){
+            if (c==0){
+                system.out.println("Phuong trinh vo so nghiem");
+            }
+            else {
+                System.out.println("Phuong trinh vo nghiem");
+            }
+        }
+        else {
+            float x = -c/b;
+        }
+        static void tinhptbac2(int a, int b, int c) {
+            long denta = b*b - 4 * a * c;
+            if (denta==0) {
+                double x= -b/2 * a;
+                System.out.println("Phuong trinh co nghiem kep: " +x);
+            } else if (denta <0){
+                System.out.println("Phuong trinh vo nghiem");
+            }else {
+                double x1=(-b -Math.sqrt(denta)) / (2 * a);
+                double x2=(-b -Math.sqrt(denta)) / (2 * a);
+
+                System.out.println("Phuong trinh co nghiem x1: " +x1);
+                System.out.println("Phuong trinh co nghiem x2: " +x2);
+            }
+            }
+    }
+}
